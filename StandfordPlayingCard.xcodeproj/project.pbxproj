@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F203A5235D774100A417C3 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F203A4235D774100A417C3 /* PlayingCardView.swift */; };
 		6AE13338235CACAE0028B36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE13337235CACAE0028B36E /* AppDelegate.swift */; };
 		6AE1333E235CACB00028B36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE1333D235CACB00028B36E /* Assets.xcassets */; };
 		6AE13341235CACB00028B36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE13340235CACB00028B36E /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20F203A4235D774100A417C3 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		6AE13334235CACAE0028B36E /* StandfordPlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandfordPlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE13337235CACAE0028B36E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE1333D235CACB00028B36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				6AE13337235CACAE0028B36E /* AppDelegate.swift */,
 				6AE1334F235CB51A0028B36E /* ViewController.swift */,
+				20F203A4235D774100A417C3 /* PlayingCardView.swift */,
 				6AE13351235CB5270028B36E /* Main.storyboard */,
 				6AE1334B235CADC10028B36E /* PlayingCard.swift */,
 				6AE1334D235CB3150028B36E /* PlayingCardDeck.swift */,
@@ -156,6 +159,7 @@
 				6AE1334E235CB3150028B36E /* PlayingCardDeck.swift in Sources */,
 				6AE1334C235CADC10028B36E /* PlayingCard.swift in Sources */,
 				6AE13350235CB51A0028B36E /* ViewController.swift in Sources */,
+				20F203A5235D774100A417C3 /* PlayingCardView.swift in Sources */,
 				6AE13338235CACAE0028B36E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
