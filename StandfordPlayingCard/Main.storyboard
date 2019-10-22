@@ -19,10 +19,20 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-eT-vX8" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
                                 <rect key="frame" x="16" y="147.5" width="382" height="611"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="Wjm-ZV-PS4"/>
                                     <constraint firstAttribute="width" secondItem="pqe-eT-vX8" secondAttribute="height" multiplier="5:8" id="g5E-mk-qXY"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value=" X"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Za-9E-eyo" appends="YES" id="cHR-EW-20Y"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,8 +46,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OFV-MV-IXP"/>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="pqe-eT-vX8" id="LzR-kz-VEd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMb-ua-hp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1Za-9E-eyo">
+                    <connections>
+                        <action selector="filpCard:" destination="Yc1-1u-7qI" id="bpf-ba-My8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>

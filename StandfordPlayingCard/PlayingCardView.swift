@@ -8,12 +8,28 @@
 
 import UIKit
 
+@IBDesignable 
 class PlayingCardView: UIView {
     
+    @IBInspectable
     var rank:Int = 11 { didSet{ setNeedsDisplay(); setNeedsLayout() } }
+    @IBInspectable
     var suit:String = "♥️" { didSet{ setNeedsDisplay(); setNeedsLayout() } }
-    var isFaceUp = true  { didSet{ setNeedsDisplay(); setNeedsLayout() } }
+    @IBInspectable
+    var isFaceUp:Bool = true { didSet{ setNeedsDisplay(); setNeedsLayout() } }
     
+    var faceCardScale:CGFloat = SizeRatio.faceCardImageSizeToBoundsSize {didSet{setNeedsDisplay() }}
+    
+    @objc func adjustFaceCardScale(byHandlingGestureRecognizedBy recoginzer:UIPinchGestureRecognizer){
+        switch recoginzer.state {
+        case .changed,.ended:
+            faceCardScale *= recoginzer.scale
+            recoginzer.scale = 1.0
+        default:
+            break
+        }
+    }
+     
     private func centeredAttributedString(_ string :String ,fontSize:CGFloat )->NSAttributedString{
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
         font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
@@ -26,7 +42,7 @@ class PlayingCardView: UIView {
     }
     
     private var cornerString:NSAttributedString {
-        return centeredAttributedString( String(rank) + "\n" + suit, fontSize: 16.0)
+        return centeredAttributedString( rankString + "\n" + suit, fontSize: 16.0)
     }
     
     private lazy var upperLeftCornerLabel=createCornerLabel()
@@ -69,7 +85,7 @@ class PlayingCardView: UIView {
         
     }
     
-   
+    
     override func draw(_ rect: CGRect) {
         
         let roundPath=UIBezierPath(roundedRect: bounds, cornerRadius: 16.0 )
@@ -77,10 +93,16 @@ class PlayingCardView: UIView {
         UIColor.white.setFill()
         roundPath.fill()
         
-        if  rank>10 , let faceCardImg=UIImage(named: "POKE"){
-            faceCardImg.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize ))
+        if isFaceUp{
+            if  rank>10 , let faceCardImg=UIImage(named: "POKE",in: Bundle(for: self.classForCoder),compatibleWith: traitCollection){
+                faceCardImg.draw(in: bounds.zoom(by: faceCardScale))
+            }else{
+                drawPips()
+            }
         }else{
-            drawPips()
+            if let cardBackImg = UIImage(named: "cardback",in: Bundle(for: self.classForCoder),compatibleWith: traitCollection){
+                cardBackImg.draw(in: bounds)
+            }
         }
         
     }
