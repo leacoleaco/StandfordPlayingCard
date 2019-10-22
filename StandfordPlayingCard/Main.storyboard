@@ -18,7 +18,7 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-eT-vX8" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
                                 <rect key="frame" x="16" y="147.5" width="382" height="611"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="Wjm-ZV-PS4"/>
                                     <constraint firstAttribute="width" secondItem="pqe-eT-vX8" secondAttribute="height" multiplier="5:8" id="g5E-mk-qXY"/>
