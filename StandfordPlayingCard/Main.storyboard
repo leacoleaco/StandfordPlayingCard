@@ -17,16 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-eT-vX8" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="147.5" width="382" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="Wjm-ZV-PS4"/>
+                                    <constraint firstAttribute="width" secondItem="pqe-eT-vX8" secondAttribute="height" multiplier="5:8" id="g5E-mk-qXY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="top" secondItem="OFV-MV-IXP" secondAttribute="top" id="2fZ-Js-osP"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="trailing" secondItem="qKH-9f-xyC" secondAttribute="trailingMargin" id="PC9-G2-kWF"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="bottom" secondItem="OFV-MV-IXP" secondAttribute="bottom" id="fmi-w6-ThM"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="leading" secondItem="qKH-9f-xyC" secondAttribute="leadingMargin" id="s5Z-qQ-qbv"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="centerY" secondItem="OFV-MV-IXP" secondAttribute="centerY" id="27L-i8-DUa"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="top" constant="16" id="2fZ-Js-osP"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="trailing" constant="-16" id="IPD-nl-2Lu"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="bottom" constant="16" id="fmi-w6-ThM"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="leading" constant="16" id="nAj-U9-tgW"/>
+                            <constraint firstItem="pqe-eT-vX8" firstAttribute="centerX" secondItem="OFV-MV-IXP" secondAttribute="centerX" id="nYa-iv-FPz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OFV-MV-IXP"/>
                     </view>
