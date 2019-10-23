@@ -33,16 +33,35 @@ class ViewController: UIViewController {
 
     }
     
+    var faceUpCardViews: [PlayingCardView]{
+        return cardViews.filter {$0.isFaceUp && !$0.isHidden}
+    }
+    
     @objc func flipCard(_ recognizer : UITapGestureRecognizer){
         switch recognizer.state {
         case .ended:
             if let chooseCardView = recognizer.view as? PlayingCardView{
-                UIView.transition(with: chooseCardView,
-                                  duration:  0.6,
-                                  options: [.transitionFlipFromLeft],
-                                  animations: {
-                                    chooseCardView.isFaceUp = !chooseCardView.isFaceUp
-                                  })
+                UIView.transition(
+                    with: chooseCardView,
+                    duration:  0.6,
+                    options: [.transitionFlipFromLeft],
+                    animations: {
+                        chooseCardView.isFaceUp = !chooseCardView.isFaceUp
+                },
+                    completion:{ finished in
+                        if self.faceUpCardViews.count>=2 {
+                            self.faceUpCardViews.forEach {
+                                cardView in
+                                UIView.transition(
+                                    with: cardView,
+                                    duration:  0.6,
+                                    options: [.transitionFlipFromLeft],
+                                    animations: {
+                                        cardView.isFaceUp = !cardView.isFaceUp
+                                })
+                            }
+                        }
+                })
             }
         default:
             break
