@@ -27,17 +27,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-Wt-hRW" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="156" y="263" width="102" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmn-H3-TBP" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
                                 <rect key="frame" x="93" y="674" width="102" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,17 +51,6 @@
                             </view>
                             <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vqi-Do-Y9t" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
                                 <rect key="frame" x="45" y="512" width="102" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tll-7n-V0F" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="20" y="263" width="102" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -115,6 +93,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tll-7n-V0F" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="71" y="294" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="OFV-MV-IXP"/>
@@ -123,7 +112,6 @@
                         <outletCollection property="cardViews" destination="pqe-eT-vX8" collectionClass="NSMutableArray" id="mYT-j3-BJa"/>
                         <outletCollection property="cardViews" destination="avY-jX-BX1" collectionClass="NSMutableArray" id="2bW-co-ulV"/>
                         <outletCollection property="cardViews" destination="tll-7n-V0F" collectionClass="NSMutableArray" id="RCr-Zh-PrQ"/>
-                        <outletCollection property="cardViews" destination="MUv-Wt-hRW" collectionClass="NSMutableArray" id="yHP-jg-Z6I"/>
                         <outletCollection property="cardViews" destination="rsE-hl-42X" collectionClass="NSMutableArray" id="l8n-6I-jX1"/>
                         <outletCollection property="cardViews" destination="6KB-cD-RyH" collectionClass="NSMutableArray" id="SFr-hq-IXe"/>
                         <outletCollection property="cardViews" destination="Vqi-Do-Y9t" collectionClass="NSMutableArray" id="NUR-57-Mxy"/>

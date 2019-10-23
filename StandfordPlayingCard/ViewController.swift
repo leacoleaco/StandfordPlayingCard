@@ -33,8 +33,14 @@ class ViewController: UIViewController {
 
     }
     
-    var faceUpCardViews: [PlayingCardView]{
+    private var faceUpCardViews: [PlayingCardView]{
         return cardViews.filter {$0.isFaceUp && !$0.isHidden}
+    }
+    
+    private var faceUpCardViewsMatch: Bool{
+       return faceUpCardViews.count == 2 &&
+            faceUpCardViews[0].rank == faceUpCardViews[1].rank &&
+            faceUpCardViews[0].suit == faceUpCardViews[1].suit
     }
     
     @objc func flipCard(_ recognizer : UITapGestureRecognizer){
@@ -49,7 +55,38 @@ class ViewController: UIViewController {
                         chooseCardView.isFaceUp = !chooseCardView.isFaceUp
                 },
                     completion:{ finished in
-                        if self.faceUpCardViews.count>=2 {
+                        if self.faceUpCardViewsMatch {
+                            UIViewPropertyAnimator.runningPropertyAnimator(
+                                withDuration: 0.6,
+                                delay: 0,
+                                options: [],
+                                animations: {
+                                    self.faceUpCardViews.forEach { (cardView) in
+                                        cardView.transform = CGAffineTransform.identity.scaledBy(x: 3.0 , y: 3.0)
+                                    }
+                            }) { (position) in
+                                UIViewPropertyAnimator.runningPropertyAnimator(
+                                    withDuration: 0.75 ,
+                                    delay: 0,
+                                    options: [],
+                                    animations: {
+                                        self.faceUpCardViews.forEach {
+                                            $0.transform = CGAffineTransform.identity.scaledBy(x: 0.3 , y: 0.3)
+                                            $0.alpha = 0
+                                        }
+                                    },
+                                    completion: { position in
+                                        self.faceUpCardViews.forEach {
+                                            $0.isHidden = true
+                                            $0.transform = .identity
+                                            $0.alpha = 1
+                                        }
+                                    }
+                                )
+                            }
+
+                        }
+                        else if self.faceUpCardViews.count>=2 {
                             self.faceUpCardViews.forEach {
                                 cardView in
                                 UIView.transition(
