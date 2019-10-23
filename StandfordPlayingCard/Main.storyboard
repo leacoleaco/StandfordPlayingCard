@@ -16,46 +16,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-eT-vX8" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
-                                <rect key="frame" x="16" y="147.5" width="382" height="611"/>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-eT-vX8" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="45" y="87" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="Wjm-ZV-PS4"/>
-                                    <constraint firstAttribute="width" secondItem="pqe-eT-vX8" secondAttribute="height" multiplier="5:8" id="g5E-mk-qXY"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rank">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value=" X"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="1Za-9E-eyo" appends="YES" id="cHR-EW-20Y"/>
-                                </connections>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-Wt-hRW" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="156" y="263" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmn-H3-TBP" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="93" y="674" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kxq-qN-SMo" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="225" y="595" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vqi-Do-Y9t" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="45" y="512" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tll-7n-V0F" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="263" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avY-jX-BX1" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="184" y="87" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6KB-cD-RyH" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="206" y="425" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsE-hl-42X" customClass="PlayingCardView" customModule="StandfordPlayingCard" customModuleProvider="target">
+                                <rect key="frame" x="292" y="249" width="102" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="centerY" secondItem="OFV-MV-IXP" secondAttribute="centerY" id="27L-i8-DUa"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="top" constant="16" id="2fZ-Js-osP"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="trailing" constant="-16" id="IPD-nl-2Lu"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="bottom" constant="16" id="fmi-w6-ThM"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OFV-MV-IXP" secondAttribute="leading" constant="16" id="nAj-U9-tgW"/>
-                            <constraint firstItem="pqe-eT-vX8" firstAttribute="centerX" secondItem="OFV-MV-IXP" secondAttribute="centerX" id="nYa-iv-FPz"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OFV-MV-IXP"/>
                     </view>
                     <connections>
-                        <outlet property="playingCardView" destination="pqe-eT-vX8" id="LzR-kz-VEd"/>
+                        <outletCollection property="cardViews" destination="pqe-eT-vX8" collectionClass="NSMutableArray" id="mYT-j3-BJa"/>
+                        <outletCollection property="cardViews" destination="avY-jX-BX1" collectionClass="NSMutableArray" id="2bW-co-ulV"/>
+                        <outletCollection property="cardViews" destination="tll-7n-V0F" collectionClass="NSMutableArray" id="RCr-Zh-PrQ"/>
+                        <outletCollection property="cardViews" destination="MUv-Wt-hRW" collectionClass="NSMutableArray" id="yHP-jg-Z6I"/>
+                        <outletCollection property="cardViews" destination="rsE-hl-42X" collectionClass="NSMutableArray" id="l8n-6I-jX1"/>
+                        <outletCollection property="cardViews" destination="6KB-cD-RyH" collectionClass="NSMutableArray" id="SFr-hq-IXe"/>
+                        <outletCollection property="cardViews" destination="Vqi-Do-Y9t" collectionClass="NSMutableArray" id="NUR-57-Mxy"/>
+                        <outletCollection property="cardViews" destination="Kxq-qN-SMo" collectionClass="NSMutableArray" id="hAo-a2-dcK"/>
+                        <outletCollection property="cardViews" destination="fmn-H3-TBP" collectionClass="NSMutableArray" id="PEC-Kr-zWm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMb-ua-hp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="1Za-9E-eyo">
-                    <connections>
-                        <action selector="filpCard:" destination="Yc1-1u-7qI" id="bpf-ba-My8"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
