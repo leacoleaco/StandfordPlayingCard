@@ -29,7 +29,7 @@ class PlayingCardView: UIView {
             break
         }
     }
-     
+    
     private func centeredAttributedString(_ string :String ,fontSize:CGFloat )->NSAttributedString{
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
         font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
@@ -201,5 +201,12 @@ extension CGRect{
 extension CGPoint{
     func offsetBy(dx: CGFloat,dy:CGFloat)-> CGPoint{
         return CGPoint(x:x+dx,y:y+dy)
+    }
+}
+
+extension CGFloat{
+    var arc4random: CGFloat{
+        let random: Double = drand48()
+        return CGFloat(random)*self
     }
 }
